@@ -1,0 +1,81 @@
+version: 2
+sources:
+- loader: makefile pretending to be some larger system
+  schema: public
+  name: nhl
+  tables:
+    - name: game_stats
+      description: Player stats from a game
+      columns:
+        - name: player_person_id
+        - name: side
+        - name: player_person_fullName 
+        - name: player_person_link 
+        - name: player_person_firstName 
+        - name: player_person_lastName 
+        - name: player_person_primaryNumber 
+        - name: player_person_birthDate 
+        - name: player_person_currentAge 
+        - name: player_person_birthCity 
+        - name: player_person_birthStateProvince 
+        - name: player_person_birthCountry 
+        - name: player_person_nationality 
+        - name: player_person_height 
+        - name: player_person_weight 
+        - name: player_person_active 
+        - name: player_person_alternateCaptain 
+        - name: player_person_captain 
+        - name: player_person_rookie 
+        - name: player_person_shootsCatches 
+        - name: player_person_rosterStatus 
+        - name: player_person_currentTeam_id 
+        - name: player_person_currentTeam_name 
+        - name: player_person_currentTeam_link 
+        - name: player_person_primaryPosition_code 
+        - name: player_person_primaryPosition_name 
+        - name: player_person_primaryPosition_type 
+        - name: player_person_primaryPosition_abbreviation 
+        - name: player_jerseyNumber 
+        - name: player_position_code 
+        - name: player_position_name 
+        - name: player_position_type 
+        - name: player_position_abbreviation 
+        - name: player_stats_skaterStats_timeOnIce 
+        - name: player_stats_skaterStats_assists 
+        - name: player_stats_skaterStats_goals 
+        - name: player_stats_skaterStats_shots 
+        - name: player_stats_skaterStats_hits 
+        - name: player_stats_skaterStats_powerPlayGoals 
+        - name: player_stats_skaterStats_powerPlayAssists 
+        - name: player_stats_skaterStats_penaltyMinutes 
+        - name: player_stats_skaterStats_faceOffPct 
+        - name: player_stats_skaterStats_faceOffWins 
+        - name: player_stats_skaterStats_faceoffTaken 
+        - name: player_stats_skaterStats_takeaways 
+        - name: player_stats_skaterStats_giveaways 
+        - name: player_stats_skaterStats_shortHandedGoals 
+        - name: player_stats_skaterStats_shortHandedAssists 
+        - name: player_stats_skaterStats_blocked 
+        - name: player_stats_skaterStats_plusMinus 
+        - name: player_stats_skaterStats_evenTimeOnIce 
+        - name: player_stats_skaterStats_powerPlayTimeOnIce 
+        - name: player_stats_skaterStats_shortHandedTimeOnIce 
+        - name: player_stats_goalieStats_timeOnIce 
+        - name: player_stats_goalieStats_assists 
+        - name: player_stats_goalieStats_goals 
+        - name: player_stats_goalieStats_pim 
+        - name: player_stats_goalieStats_shots 
+        - name: player_stats_goalieStats_saves 
+        - name: player_stats_goalieStats_powerPlaySaves 
+        - name: player_stats_goalieStats_shortHandedSaves 
+        - name: player_stats_goalieStats_evenSaves 
+        - name: player_stats_goalieStats_shortHandedShotsAgainst 
+        - name: player_stats_goalieStats_evenShotsAgainst 
+        - name: player_stats_goalieStats_powerPlayShotsAgainst 
+        - name: player_stats_goalieStats_decision 
+        - name: player_stats_goalieStats_savePercentage 
+        - name: player_stats_goalieStats_powerPlaySavePercentage 
+        - name: player_stats_goalieStats_evenStrengthSavePercentage 
+        - name: player_stats_goalieStats_shortHandedSavePercentage 
+
+

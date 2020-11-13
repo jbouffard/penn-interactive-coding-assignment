@@ -1,0 +1,14 @@
+__pycache__/
+.test_cache/
+*.pyc
+
+# s3/minio data
+s3_data/**/*.csv
+s3_data/load_data.sql
+.minio.sys/
+
+.DS_Store
+.python-version
+.envrc
+
+

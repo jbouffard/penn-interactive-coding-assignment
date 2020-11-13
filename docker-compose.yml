@@ -1,0 +1,34 @@
+version: '3'
+services:
+  db:
+    image: postgres:12-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./utils:/docker-entrypoint-initdb.d
+      - ./s3_data:/data/s3_data
+    environment:
+      POSTGRES_PASSWORD: password
+      PGPASSWORD: password
+    command: ["-d", "challenge"]
+  s3:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./s3_data:/data
+    environment:
+      MINIO_ACCESS_KEY: accesskey
+      MINIO_SECRET_KEY: secretkey
+    command: ["server", "/data"]
+  job:
+    build: .
+    links:
+      - s3
+    environment:
+      S3_ENDPOINT_URL: http://s3:9000
+      AWS_ACCESS_KEY_ID: accesskey
+      AWS_SECRET_ACCESS_KEY: secretkey
+      AWS_DEFAULT_REGION: us-east-1
+      DEST_BUCKET: data-bucket
+

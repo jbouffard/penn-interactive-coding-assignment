@@ -1,0 +1,35 @@
+version: 2
+models:
+  - name: nhl_players
+    description: Player table with stats summary
+    columns:
+      - name: id
+        description: unique id for identifying player
+        tests:
+          - not_null
+          - unique
+      - name: full_name
+        description: Full player name
+        tests:
+          - not_null
+      - name: team_name
+        description: Current team name
+      - name: assists
+        description: Current tally of assists by this player
+        tests:
+          - not_null
+      - name: goals
+        description: Current tally goals scored by this player
+        tests:
+          - not_null
+      - name: points
+        description: Current tally points (goals+assists) scored by this player
+        tests:
+          - not_null
+      - name: time_on_ice
+        description: Total time on ice regardless of position played
+        tests:
+          - not_null
+        
+
+

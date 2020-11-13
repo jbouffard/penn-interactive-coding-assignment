@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: points_leaders
+    description: Teams' Points Leader(s)
+    columns:
+      - name: team_name
+        description: Team Name
+      - name: full_name
+        description: Player Name
+      - name: points
+        description: Points total
+        tests:
+          - greater_than_zero
+

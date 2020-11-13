@@ -1,0 +1,13 @@
+default:
+  outputs:
+    challenge:
+      type: postgres
+      threads: 3
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: password
+      dbname: postgres
+      schema: public
+  target: challenge
+
