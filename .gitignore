@@ -11,4 +11,4 @@ s3_data/load_data.sql
 .python-version
 .envrc
 
-
+venv/*
