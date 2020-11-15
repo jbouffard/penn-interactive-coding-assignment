@@ -30,6 +30,3 @@ models:
         description: Total time on ice regardless of position played
         tests:
           - not_null
-        
-
-
