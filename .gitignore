@@ -12,3 +12,5 @@ s3_data/load_data.sql
 .envrc
 
 venv/*
+
+*.swp
